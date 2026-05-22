@@ -1,0 +1,55 @@
+{
+    "version": 1,
+    "name": "PlayerTestInput",
+    "maps": [
+        {
+            "name": "TestInput",
+            "id": "828e895c-db0f-439e-90c9-cd8b49f27e18",
+            "actions": [
+                {
+                    "name": "ChangePositionX",
+                    "type": "Button",
+                    "id": "35219f43-3024-4847-b15d-835117ac8c89",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ChangePositionY",
+                    "type": "Button",
+                    "id": "4f1e9eb2-f14c-4f9c-82a3-f869aa671d2c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "446bc992-fd44-48ca-ada6-a7e031a024d5",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangePositionX",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7149bc6f-ccf5-4ad0-97f9-e0086d23c92a",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangePositionY",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
