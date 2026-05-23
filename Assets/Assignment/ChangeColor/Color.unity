@@ -311,6 +311,7 @@ GameObject:
   m_Component:
   - component: {fileID: 668571470}
   - component: {fileID: 668571469}
+  - component: {fileID: 668571471}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -392,6 +393,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &668571471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668571468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 939ff3d2468fdc248a637f75a0614195, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColorChanger
+  GameObject: {fileID: 0}
+  ColorShift: {x: 0.3, y: 0, z: 0}
+  enumTypes: 0
+  testGameObjects:
+  - {fileID: 668571468}
+  - {fileID: 384254257}
+  - {fileID: 1500205045}
+  - {fileID: 45947773}
+  - {fileID: 902859770}
 --- !u!1 &902859770
 GameObject:
   m_ObjectHideFlags: 0

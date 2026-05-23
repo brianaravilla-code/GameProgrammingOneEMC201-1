@@ -100,7 +100,9 @@ public enum EnumTypes
 {
     OneObject,
     TwoObject,
-    ThreeObject
+    ThreeObject,
+    FourObject,
+    FiveObject,
 }
 
 
