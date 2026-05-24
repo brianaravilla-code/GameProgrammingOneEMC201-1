@@ -1,59 +1,77 @@
+using System;
 using System.Linq.Expressions;
 using Unity.VisualScripting;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class ColorChanger : MonoBehaviour
 {
-    [SerializeField] private Material Base;
-    [SerializeField] private Material OFF;
-    [SerializeField] private Material ON;
-
-    #region New input system
-    private PlayerColor testInputs;
 
     [Header("Game Object Properties")]
-    [SerializeField] private Button ColorShift;
+        
 
     [Header("Enum types")]
-    [SerializeField] private EnumTypes enumTypes;
+    [SerializeField] private Colors color;
 
     [Header("Array of Objects")]
+    [SerializeField] private Color[] COLOR;
     [SerializeField] private GameObject[] testGameObjects;
-    private void Awake()
+
+
+    private void Start()
     {
-        testInputs = new PlayerColor();
+        
     }
 
-    private void OnEnable()
+    private void Update()
     {
-        testInputs.Enable();
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            switch (color)
+            {
+                case Colors.White:
+                    testGameObjects[0].GetComponent<Renderer>().material.color = COLOR[0];
+                    testGameObjects[1].GetComponent<Renderer>().material.color = COLOR[0];
+                    testGameObjects[2].GetComponent<Renderer>().material.color = COLOR[0];
+                    testGameObjects[3].GetComponent<Renderer>().material.color = COLOR[0];
+                    Debug.Log("call OneObject");
+                    break;
+                case Colors.Black:
+                    testGameObjects[0].GetComponent<Renderer>().material.color = COLOR[1];
+                    testGameObjects[1].GetComponent<Renderer>().material.color = COLOR[1];
+                    testGameObjects[2].GetComponent<Renderer>().material.color = COLOR[1];
+                    testGameObjects[3].GetComponent<Renderer>().material.color = COLOR[1];
+                    Debug.Log("call OneObject");
+                    break;
+                case Colors.Default:
+                    testGameObjects[0].GetComponent<Renderer>().material.color = COLOR[2];
+                    testGameObjects[1].GetComponent<Renderer>().material.color = COLOR[2];
+                    testGameObjects[2].GetComponent<Renderer>().material.color = COLOR[2];
+                    testGameObjects[3].GetComponent<Renderer>().material.color = COLOR[2];
+                    Debug.Log("call OneObject");
+                    break;
+                
+
+            }
+            
+        }
+
     }
 
     private void OnDisable()
     {
-        testInputs.Disable();
+        testGameObjects[0].GetComponent<Renderer>().material.color = COLOR[2];
+        testGameObjects[1].GetComponent<Renderer>().material.color = COLOR[2];
+        testGameObjects[2].GetComponent<Renderer>().material.color = COLOR[2];
+        testGameObjects[3].GetComponent<Renderer>().material.color = COLOR[2];
     }
 
-    private void Start()
+    private enum Colors
     {
-        testInputs.ChangeColor.ColorShift.performed += ctx =>
-        {
-            Base.mainTexture = OFF.mainTexture;
-                switch (enumTypes)
-            {
-                case EnumTypes.OneObject:
-                    ChangeColors(, Color.red);
-                    Debug.Log("call OneObject");
-                    break;
-            }
-        };
-
-
+        White,
+        Black,
+        Default
     }
-
-    #endregion
-
-
 }
