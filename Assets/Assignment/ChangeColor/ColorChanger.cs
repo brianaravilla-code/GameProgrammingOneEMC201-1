@@ -63,9 +63,9 @@ public class ColorChanger : MonoBehaviour
     private void OnDisable()
     {
         testGameObjects[0].GetComponent<Renderer>().material.color = COLOR[2];
-        testGameObjects[1].GetComponent<Renderer>().material.color = COLOR[2];
-        testGameObjects[2].GetComponent<Renderer>().material.color = COLOR[2];
-        testGameObjects[3].GetComponent<Renderer>().material.color = COLOR[2];
+                    testGameObjects[1].GetComponent<Renderer>().material.color = COLOR[2];
+                    testGameObjects[2].GetComponent<Renderer>().material.color = COLOR[2];
+                    testGameObjects[3].GetComponent<Renderer>().material.color = COLOR[2];
     }
 
     private enum Colors

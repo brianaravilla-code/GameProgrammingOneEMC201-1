@@ -184,7 +184,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8896a71b00e7dbb42bc1bc49c0312303, type: 2}
+  - {fileID: 2100000, guid: 1b6878c3a13d14a46a7175acce0ba1ea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -225,7 +225,7 @@ Transform:
   m_GameObject: {fileID: 245502394}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.39275, y: 0.03299, z: -0.14016}
+  m_LocalPosition: {x: 0.73999953, y: 0.03299, z: -0.14016}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -296,7 +296,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8896a71b00e7dbb42bc1bc49c0312303, type: 2}
+  - {fileID: 2100000, guid: 1b6878c3a13d14a46a7175acce0ba1ea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -337,7 +337,7 @@ Transform:
   m_GameObject: {fileID: 986707076}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0127504, y: 0.03299, z: -0.14016}
+  m_LocalPosition: {x: -1.64, y: 0.03299, z: -0.14016}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -545,7 +545,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8896a71b00e7dbb42bc1bc49c0312303, type: 2}
+  - {fileID: 2100000, guid: 1b6878c3a13d14a46a7175acce0ba1ea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -586,7 +586,7 @@ Transform:
   m_GameObject: {fileID: 1184168826}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.61275, y: 0.03299, z: -0.14016}
+  m_LocalPosition: {x: 2.9599996, y: 0.03299, z: -0.14016}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -640,7 +640,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 939ff3d2468fdc248a637f75a0614195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ColorChanger
-  Mymaterial: {fileID: 2100000, guid: 8896a71b00e7dbb42bc1bc49c0312303, type: 2}
   color: 0
   COLOR:
   - {r: 1, g: 1, b: 1, a: 0}
@@ -716,7 +715,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8896a71b00e7dbb42bc1bc49c0312303, type: 2}
+  - {fileID: 2100000, guid: 1b6878c3a13d14a46a7175acce0ba1ea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -757,7 +756,7 @@ Transform:
   m_GameObject: {fileID: 2063442284}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.6327505, y: 0.03299, z: -0.14016}
+  m_LocalPosition: {x: 4.98, y: 0.03299, z: -0.14016}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
