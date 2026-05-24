@@ -162,7 +162,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: aa4888044ba594445a3f19b38058c419, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -253,7 +253,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: aa4888044ba594445a3f19b38058c419, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -345,7 +345,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: aa4888044ba594445a3f19b38058c419, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -405,8 +405,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 939ff3d2468fdc248a637f75a0614195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ColorChanger
-  GameObject: {fileID: 0}
-  ColorShift: {x: 0.3, y: 0, z: 0}
+  Base: {fileID: 10756, guid: 0000000000000000e000000000000000, type: 0}
+  OFF: {fileID: 2100000, guid: 39470038d0d1f9645940977e8383edf3, type: 2}
+  ON: {fileID: 2100000, guid: 55a6b2b7d1297b94e96f3d1699c4652d, type: 2}
+  ColorShift: {fileID: 0}
   enumTypes: 0
   testGameObjects:
   - {fileID: 668571468}
@@ -457,7 +459,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: aa4888044ba594445a3f19b38058c419, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -640,7 +642,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: aa4888044ba594445a3f19b38058c419, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
