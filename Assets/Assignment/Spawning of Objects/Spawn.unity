@@ -399,6 +399,8 @@ MonoBehaviour:
   - {fileID: 4941552845292872107, guid: d1a60dc785747d047a10b3aac4cd2c75, type: 3}
   - {fileID: 8029700732561868555, guid: 978a35fe06ce05a44aec211b40170490, type: 3}
   - {fileID: 4941552845292872107, guid: 689c6d1c6a4f3cf4db0b67dd88efc133, type: 3}
+  - {fileID: 4941552845292872107, guid: 689c6d1c6a4f3cf4db0b67dd88efc133, type: 3}
+  - {fileID: 4941552845292872107, guid: 689c6d1c6a4f3cf4db0b67dd88efc133, type: 3}
   Spawncounter: {fileID: 1866266206}
 --- !u!4 &1073285590
 Transform:
