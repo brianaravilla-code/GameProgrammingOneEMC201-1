@@ -109,6 +109,15 @@ public partial class @PlayerTestInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Move"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""582fc262-e804-4b1c-8900-41e5196ce763"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -133,6 +142,61 @@ public partial class @PlayerTestInput: IInputActionCollection2, IDisposable
                     ""action"": ""ChangePositionY"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""a8309c3a-9037-44ec-9b21-48e96d48e4ac"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""1c25a56d-41a8-4679-b310-3602245df3b4"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""6fd3df0d-42d9-4346-a35d-f2ec44fb39d0"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""34f1edce-95e6-4c6a-a531-a3cdd6cde7fa"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""9bae6183-e6c0-4b30-a2bd-4d151795e5f3"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         }
@@ -143,6 +207,7 @@ public partial class @PlayerTestInput: IInputActionCollection2, IDisposable
         m_TestInput = asset.FindActionMap("TestInput", throwIfNotFound: true);
         m_TestInput_ChangePositionX = m_TestInput.FindAction("ChangePositionX", throwIfNotFound: true);
         m_TestInput_ChangePositionY = m_TestInput.FindAction("ChangePositionY", throwIfNotFound: true);
+        m_TestInput_Move = m_TestInput.FindAction("Move", throwIfNotFound: true);
     }
 
     ~@PlayerTestInput()
@@ -225,6 +290,7 @@ public partial class @PlayerTestInput: IInputActionCollection2, IDisposable
     private List<ITestInputActions> m_TestInputActionsCallbackInterfaces = new List<ITestInputActions>();
     private readonly InputAction m_TestInput_ChangePositionX;
     private readonly InputAction m_TestInput_ChangePositionY;
+    private readonly InputAction m_TestInput_Move;
     /// <summary>
     /// Provides access to input actions defined in input action map "TestInput".
     /// </summary>
@@ -244,6 +310,10 @@ public partial class @PlayerTestInput: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "TestInput/ChangePositionY".
         /// </summary>
         public InputAction @ChangePositionY => m_Wrapper.m_TestInput_ChangePositionY;
+        /// <summary>
+        /// Provides access to the underlying input action "TestInput/Move".
+        /// </summary>
+        public InputAction @Move => m_Wrapper.m_TestInput_Move;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -276,6 +346,9 @@ public partial class @PlayerTestInput: IInputActionCollection2, IDisposable
             @ChangePositionY.started += instance.OnChangePositionY;
             @ChangePositionY.performed += instance.OnChangePositionY;
             @ChangePositionY.canceled += instance.OnChangePositionY;
+            @Move.started += instance.OnMove;
+            @Move.performed += instance.OnMove;
+            @Move.canceled += instance.OnMove;
         }
 
         /// <summary>
@@ -293,6 +366,9 @@ public partial class @PlayerTestInput: IInputActionCollection2, IDisposable
             @ChangePositionY.started -= instance.OnChangePositionY;
             @ChangePositionY.performed -= instance.OnChangePositionY;
             @ChangePositionY.canceled -= instance.OnChangePositionY;
+            @Move.started -= instance.OnMove;
+            @Move.performed -= instance.OnMove;
+            @Move.canceled -= instance.OnMove;
         }
 
         /// <summary>
@@ -347,5 +423,12 @@ public partial class @PlayerTestInput: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnChangePositionY(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Move" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnMove(InputAction.CallbackContext context);
     }
 }
